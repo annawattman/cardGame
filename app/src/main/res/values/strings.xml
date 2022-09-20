@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">cardGame</string>
+    <string name="startBtn">START</string>
+    <string name="startText">Tryck på knappen för att starta spelet</string>
 </resources>
