@@ -14,6 +14,7 @@
         android:background="#000000"
         android:backgroundTint="#000000"
         android:drawableTint="#FFFFFF"
+        android:onClick="startBtn"
         android:rotationX="-3"
         android:text="@string/startBtn"
         android:textSize="34sp"
