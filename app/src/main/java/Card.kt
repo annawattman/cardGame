@@ -1,2 +1,2 @@
-class Card {
+class Card(var image : Int, var value: Int) {
 }

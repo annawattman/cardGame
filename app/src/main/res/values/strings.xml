@@ -2,4 +2,7 @@
     <string name="app_name">cardGame</string>
     <string name="startBtn">START</string>
     <string name="startText">Tryck på knappen för att starta spelet</string>
+    <string name="todo">TODO</string>
+    <string name="points">Poäng: </string>
+    <string name="guessText">Gissa nästa kort</string>
 </resources>
