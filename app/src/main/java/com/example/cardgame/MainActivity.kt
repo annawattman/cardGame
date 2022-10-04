@@ -19,6 +19,6 @@ class MainActivity : AppCompatActivity() {
 
     fun startBtn(view : View) {
        val intent = Intent(this, MainActivity2::class.java)
-         startActivity(intent)
+        startActivity(intent)
     }
 }
