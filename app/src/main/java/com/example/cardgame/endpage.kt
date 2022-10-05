@@ -1,5 +1,6 @@
 package com.example.cardgame
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -22,6 +23,12 @@ class endpage : AppCompatActivity() {
 
         val points = intent.getIntExtra("points", 0)
         pointsTextView.text = points.toString()
+
+
+        endStartBtn.setOnClickListener{
+            val intent = Intent(this, MainActivity2::class.java)
+            startActivity(intent)
+        }
 
     }
 }

@@ -55,6 +55,9 @@ class MainActivity2 : AppCompatActivity() {
         cardImages.add(card10)
 
         currentCard = cardImages[Random.nextInt(cardImages.size)]
+        var drawableId = this.resources.getIdentifier("number${currentCard.value}", "drawable", this.packageName)
+        randomCard.setImageResource(drawableId)
+
         lastCard = currentCard
 
         var points : Int = 0
@@ -83,11 +86,13 @@ class MainActivity2 : AppCompatActivity() {
 
     fun randomCardHigher(): Boolean {
         val random = Random
+
         lastCard = currentCard
         currentCard = cardImages[random.nextInt(cardImages.size)]
         var drawableId = this.resources.getIdentifier("number${currentCard.value}", "drawable", this.packageName)
-        Log.d("randomCardHigher","drawableId= $drawableId")
+        Log.d("randomCardHigher","lastCard= ${lastCard.value}")
         Log.d("randomCardHigher","currentCard= ${currentCard.value}")
+
         randomCard.setImageResource(drawableId)
         return lastCard.value < currentCard.value
     }
@@ -97,7 +102,7 @@ class MainActivity2 : AppCompatActivity() {
         lastCard = currentCard
         currentCard = cardImages[random.nextInt(cardImages.size)]
         var drawableId = this.resources.getIdentifier("number${currentCard.value}", "drawable", this.packageName)
-        Log.d("randomCardLower","drawableId= $drawableId")
+        Log.d("randomCardLower","lastCard= ${lastCard.value}")
         Log.d("randomCardLower","currentCard= ${currentCard.value}")
         randomCard.setImageResource(drawableId)
         return lastCard.value > currentCard.value

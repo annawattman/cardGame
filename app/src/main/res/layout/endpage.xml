@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFEE63">
 
     <TextView
         android:id="@+id/endTextView1"
@@ -11,40 +12,52 @@
         android:layout_height="116dp"
         android:maxLines="2"
         android:text="Bra jobbat! \nDu fick         poäng."
+        android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214" />
+        app:layout_constraintVertical_bias="0.217" />
 
     <TextView
         android:id="@+id/endTextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Försök igen!"
+        android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/endTextView1"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="104dp" />
+        app:layout_constraintVertical_bias="0.029" />
 
     <Button
         android:id="@+id/endStartBtn"
-        android:layout_width="146dp"
-        android:layout_height="72dp"
+        android:layout_width="151dp"
+        android:layout_height="74dp"
+        android:backgroundTint="#008705"
         android:text="STARTA"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="329dp" />
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endTextView2"
+        app:layout_constraintVertical_bias="0.145" />
 
     <TextView
         android:id="@+id/pointsTextView"
         android:layout_width="70dp"
         android:layout_height="47dp"
         android:text="644"
+        android:textColor="#000000"
         android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="174dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.248" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,27 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFEE63"
     tools:context=".MainActivity2">
 
     <Button
         android:id="@+id/higherBtn"
         android:layout_width="90dp"
         android:layout_height="96dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="#008705"
         android:text="HÖGRE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toEndOf="@+id/lowerBtn"
+        app:layout_constraintTop_toBottomOf="@+id/guessText"
+        app:layout_constraintVertical_bias="0.027" />
 
     <TextView
         android:id="@+id/pointsText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="115dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/points"
+        android:textColor="#000000"
         android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/randomCard"
-        tools:layout_editor_absoluteX="90dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/randomCard"
@@ -43,6 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/guessText"
+        android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +66,8 @@
         android:id="@+id/lowerBtn"
         android:layout_width="90dp"
         android:layout_height="96dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="#800000"
         android:text="Lägre"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,15 +78,15 @@
 
     <TextView
         android:id="@+id/points"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="76dp"
+        android:layout_height="58dp"
         android:text="0"
-        android:textSize="34sp"
+        android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/randomCard"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toEndOf="@+id/pointsText"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
